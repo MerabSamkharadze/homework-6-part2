@@ -23,3 +23,12 @@ box.appendChild(title);
 box.appendChild(image);
 
 // task 3
+
+const greetingBox = document.querySelectorAll(".greeting");
+
+for (let item of greetingBox) {
+  const paragraph = document.createElement("p");
+  paragraph.textContent = "hello";
+  paragraph.classList.add("text");
+  item.appendChild(paragraph);
+}
